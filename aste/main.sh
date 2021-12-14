@@ -8,10 +8,10 @@ echo DEVICE="$DEVICE"
 rm -rf model*
 mkdir -p models
 $PYTHON aste/main.py \
-  --names 14lap,14lap,14lap,14lap,14lap,14res,14res,14res,14res,14res,15res,15res,15res,15res,15res,16res,16res,16res,16res,16res \
-  --seeds 0,1,12,123,1234,0,1,12,123,1234,0,1,12,123,1234,0,1,12,123,1234 \
+  --names 14lap,14lap,14res,14res,15res,15res,16res,16res \
+  --seeds 12,123,1234,0,1,12,123,1234 \
   --trainer__cuda_device "$DEVICE" \
-  --trainer__num_epochs 10 \
+  --trainer__num_epochs 8 \
   --trainer__checkpointer__num_serialized_models_to_keep 1 \
   --model__span_extractor_type "endpoint" \
   --model__modules__relation__use_single_pool False \
