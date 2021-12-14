@@ -1,4 +1,8 @@
 ## Span-ASTE
+Thank you so much for this code which I am stealing... Just to make a few edits and see if anything comes out of it. I'm gonna keep the README the same until I have something to report...
+
+
+
 
 This repository implements our ACL 2021 research paper [Learning Span-Level Interactions for Aspect Sentiment Triplet Extraction](https://aclanthology.org/2021.acl-long.367/).
 
