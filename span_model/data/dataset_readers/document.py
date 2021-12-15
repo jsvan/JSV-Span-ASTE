@@ -44,6 +44,7 @@ class Dataset:
 
     @classmethod
     def from_jsonl(cls, fname):
+        print("FROM JSONL **(******(((((((((((((*********************************************************")
         documents = []
         with open(fname, "r") as f:
             for line in f:
@@ -100,13 +101,14 @@ class Document:
 
         # Get the loss weight for this document.
         weight = js.get("weight", None)
+        print("********************************************************************")
         print(cls(
             doc_key,
             dataset,
             sentences,
             weight,
         ))
-        input("INPUT J")
+        input("INPUT J from json")
         return cls(
             doc_key,
             dataset,
