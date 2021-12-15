@@ -26,7 +26,7 @@ $PYTHON aste/main.py \
   --model__loss_weights__ner 1.0 \
   --model__modules__relation__spans_per_word 0.5 \
   --model__modules__relation__neg_class_weight -1 \
-  --julian_mask
+  --julian_mask False
 
 # Glove + BiLSTM Flags
 #  --dataset_reader__token_indexers "{tokens: {type: 'single_id', lowercase_tokens: True}}" \
