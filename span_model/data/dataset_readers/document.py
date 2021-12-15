@@ -100,7 +100,13 @@ class Document:
 
         # Get the loss weight for this document.
         weight = js.get("weight", None)
-
+        print(cls(
+            doc_key,
+            dataset,
+            sentences,
+            weight,
+        ))
+        input("INPUT J")
         return cls(
             doc_key,
             dataset,
